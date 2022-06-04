@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/computer-font.ttf");
+}
+
+  /* Configurações do corpo(body) da pagina */
+body {
+	background-color: black;
+  /* Fonte color*/
+	color: rgba(255,255,255,1.0);
+}
+
+
+/* Configurações da DIV interface */
+div#interface {
+	width: 1024px;
+	background-color: #061000;
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,220,21,0.94);
+	padding: 10px 10px 10px 10px;
+}
+
+
+/* Formatação de P */
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/* Formatação e definições dos LINKs*/
+a {
+	color: #1FA503;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Definições do HEADER */
+header#cabecalho {
+	border-bottom: 1px #226500 solid;
+	height: 150px;
+	background: url("../_imagens/fundo-matrix280p.gif") 0px 0px;
+}
+header#cabecalho img#icone {
+	position: absolute;
+	left: 1300px;
+	top: 70px;
+	}
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #000000;
+	text-shadow: 1px 1px 10px rgba(255,255,255,0.90);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+header#cabecalho h2 {
+	font-family: 'Ruthie', cursive;
+	color: #FFFFFF;
+	font-size: 25pt;
+	text-shadow: 1px 1px 10px rgba(0,0,0,1.00);
+	padding: 0px;
+	margin-top: 0px;
+}
+
+/* Formatação de imagens com legendas  */
+figure.foto-legenda {
+	position: relative;
+	border: 1px solid green;
+	box-shadow: 1px 1px 15px green;
+}
+figure.foto-legenda img {
+	width: 300px;
+	height: 300px;
+}
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top:0px;
+	background-color: rgba(0,0,0,0.67);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizzing: border-box;
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+/* Formatação de Menu */
+nav#menu {
+	display: block;
+}
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	right: 700px;
+}
+nav#menu li {
+	display: inline-block;
+	background-color: #061000;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+nav#menu li:hover {
+	background-color: #0F2500;
+}
+nav#menu h1 {
+	display: none;
+}
+nav#menu a {
+	color: #186804;
+	text-decoration: none;
+}
+nav#menu a:hover {
+	color: #FFFFFF;
+}
+
+
+/* Definições da SECTION(divição) no corpo da pagina */
+section#corpo {
+	display: block;
+	width: 624px;
+	float: left;
+	border-right: 1px solid #186804;
+	padding-right: 15px;
+}
+
+
+/* Definições do ARTIGO(article) contido na section */
+article#informativo h2 {
+	font-size: 12pt;
+	color: #FFFFFF;
+	background-color: #001B02;
+	padding: 5px 0px 5px 0px;
+	margin: 10px 0px 10px 0px;
+}
+
+/* Definições do cabeçalho do artigo(article#cabecalho-artigo) */
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #072800;
+	margin-bottom: 0px;
+}
+/* Definição da classe criada dentro do h2 no cabeçalho do artigo */
+.h2center {
+	text-align: center;
+	}
+header#cabecalho-artigo h2 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #072800;
+	margin-bottom: 0px;
+}
+header#cabecalho-artigo h3 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 10pt;
+	color: #072800;
+	margin-bottom: 0px;
+}
+
+
+/* Definições da TABELA(tabelaspec) */
+table#tabelaspec {
+	border: 1px solid #36F905;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#tabelaspec td {
+	border: 1px dashed #36F905;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle
+}
+table#tabelaspec td.cripto {
+	color: #000000;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: 700;
+}
+table#tabelaspec td.vdolar {
+	color: #000000;
+	background-color: #626262;
+}
+table#tabelaspec td.vreal {
+	color: #000000;
+	background-color: #656565;
+}
+table#tabelaspec caption {
+	color: #3E8E04;
+	font-size: 15pt;
+	font-weight: 900;
+}
+table#tabelaspec caption span {
+	display: block;
+	float: right;
+	color: #3E8E04;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+
+/* Definições da 'divisão' ASIDE#LATERAL */
+aside#lateral {
+	display: block;
+	width: 350px;
+	float: right;
+}
+/* Formatação dos H2 do aside#lateral */
+aside#lateral h2 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20px;
+	color: #48D10F;
+}
+
+/* Definições do RODAPÉ(footer#rodape) */
+footer#rodape {
+	background-image: url("../_imagens/fundo-matrix-614.gif");
+	clear: both;
+	border-top: 1px solid #186804;
+}
+footer#rodape p {
+text-align: center;
+}
