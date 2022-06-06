@@ -42,7 +42,7 @@ a:hover {
 header#cabecalho {
 	border-bottom: 1px #226500 solid;
 	height: 150px;
-	background: url("imagens/fundo-matrix280p.gif") 0px 0px;
+	background: url("imagens/fundomatrix280p.gif") 0px 0px;
 }
 header#cabecalho img#icone {
 	position: absolute;
@@ -225,7 +225,7 @@ aside#lateral h2 {
 
 /* Definições do RODAPÉ(footer#rodape) */
 footer#rodape {
-	background-image: url("imagens/fundo-matrix-614.gif");
+	background-image: url("imagens/fundomatrix614.gif");
 	clear: both;
 	border-top: 1px solid #186804;
 }
